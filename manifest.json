@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "YT Summarizer",
+  "version": "0.1",
+  "description": "Summarize YouTube videos in one click",
+  "action": { "default_popup": "popup.html" },
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
